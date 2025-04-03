@@ -91,6 +91,7 @@ em{
 }
 
 .parent {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -111,6 +112,9 @@ em{
     grid-column: span 2 / span 2;
     grid-row: span 5 / span 5;
     grid-column-start: 4;
+    position: sticky;
+    top: -30vh;
+    align-self: start;
     animation:zoomIn ;
     animation-duration: 2s;
     animation-delay: 0.3s;
